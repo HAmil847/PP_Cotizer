@@ -1,0 +1,40 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper{
+    align-items: end;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+.swiper-slide .tittle-size{
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: purple;
+}
+.swiper-slide .tittle-amount{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 1.8em;
+    color: white;
+}
+
+  .swiper-slide img {
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
