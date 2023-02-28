@@ -14,59 +14,51 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="" alt="" /></div>
-      <nav class="navbar">Este es el navbar</nav>
+      <div class="logo"><img src="media/logo.png" alt="" srcset=""></div>
+      <h2 style="display: grid; place-content: center; margin-top: -5px;">Bienvenido</h2>
     </header>
-    <section id="ballons-viewer">
+    <section id="viewer">
+      <img class="background" src="media/background.png" alt="" srcset="">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper" id="swiper-wrapper">
           <div class="swiper-slide start"></div>
         </div>
       </div>
     </section>
-    <section id="selector">
-      <header id="new-item">
-        <form action="" class="item-options">
-          <select id="option">
-            <option value="n-ballon">Globo</option>
-            <option value="g-260">G-260</option>
-            <option value="foil">Foil</option>
-            <option value="numero">Numero</option>
-          </select>
-          <input
-            type="number"
-            id="tamano"
-            name="tamano"
-            required
-            placeholder="tamaño"
-          />
-          <input
-            type="number"
-            id="cantidad"
-            name="cantidad"
-            required
-            placeholder="cantidad"
-          />
-          <input
-            type="text"
-            id="precio"
-            name="precio"
-            required
-            placeholder="precio"
-          />
-        </form>
-        <button id="crear-item">Crear item</button>
-      </header>
+    <section id="opt-panel">
+      <form action="" class="item-options">
+        <select id="option">
+          <option value="n-ballon">Globo</option>
+          <option value="g-260">G-260</option>
+          <option value="foil">Foil</option>
+          <option value="numero">Numero</option>
+        </select>
+        <input
+          type="number"
+          id="tamano"
+          name="tamano"
+          required
+          placeholder="tamaño"
+        />
+        <input
+          type="number"
+          id="cantidad"
+          name="cantidad"
+          required
+          placeholder="cantidad"
+        />
+        <input
+          type="text"
+          id="precio"
+          name="precio"
+          required
+          placeholder="precio"
+        />
+      </form>
+      <button id="crear-item">Crear item</button>
     </section>
-    <section id="list-item">
-      <h1 class="main-tittle">----Descripcio----Cant----Total-----------</h1>
-      <div class="item">
-        <span class="item-tittle">Nombre de prueba</span>
-        <p class="item-cantidad">13</p>
-        <p class="item-precio-total">C$256</p>
-        <button type="submit">X</button>
-      </div>
-    </section>
+    <section id="lst-panel"></section>
+    <footer></footer>
   </body>
 
   <!-- Swiper JS -->

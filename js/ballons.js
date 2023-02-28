@@ -2,11 +2,15 @@ const precioInput = document.getElementById("precio");
 const cantidadInput = document.getElementById("cantidad");
 const tamanoInput = document.getElementById("tamano");
 const botonAgregar = document.getElementById("crear-item");
-const contenedor = document.getElementById("list-item");
+let listPanel = document.getElementById("lst-panel");
 const nombreItem = document.getElementById("option");
 const viewer = document.getElementById("swiper-wrapper");
 
 botonAgregar.addEventListener("click", () => {
+
+  //recargar la lista padre
+  listPanel = document.getElementById("lst-panel");
+
   const precio = precioInput.value;
   const cantidad = cantidadInput.value;
   const tamano = tamanoInput.value;
@@ -52,8 +56,33 @@ botonAgregar.addEventListener("click", () => {
     <span class="item-tittle">${nombre + " " + tamano + '"'}</span>
     <p class="item-cantidad">${cantidad}</p>
     <p class="item-precio-total">C$${cantidad * precio}</p>
-    <button type="submit">X</button>
+    <button class= "erase" type="submit">X</button>
   `;
 
-  contenedor.appendChild(nuevoItem);
+  listPanel.appendChild(nuevoItem);
 });
+
+
+function borrarElemento(event) {
+  // Obtener el elemento "item" padre
+  const item = event.target.parentNode;
+
+  // Obtener el elemento "nuevoGlobo" del viewer
+  const nuevoGlobo = viewer.lastChild;
+  // Eliminar el elemento "nuevoGlobo" del viewer
+  viewer.removeChild(nuevoGlobo);
+  // Eliminar el elemento "item" de listPanel
+  listPanel.removeChild(item);
+}
+
+
+//funcion de botones
+
+listPanel.addEventListener("click",function(event){
+  if(event.target.tagName == "BUTTON"){
+    borrarElemento(event);
+  }
+ });
+
+// Agregar evento "click" al botón "X" de cada elemento creado
+
