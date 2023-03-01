@@ -38,6 +38,46 @@ section#viewer .background{
     transform: translate(-50%);
     opacity: 0.2;
 }
+section#viewer #panel{
+    position: relative;
+    bottom: 0;
+    display:  flex;
+    height: 90%;
+    margin: auto;
+    padding:0 100px ;
+    overflow-x:  auto;
+    align-items: end;
+}
+.swiper-slide{
+    margin-left: -70px;
+}
+.swiper-slide .title-size{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: purple;
+    background-color: plum;
+    border-radius: 50%;
+    box-shadow: 0  0 4px 2px plum;
+}
+.swiper-slide .title-amount{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 1.8em;
+    color: white;
+}
+.swiper-slide img {
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
 
 section#opt-panel{
     grid-area: option;
@@ -75,6 +115,15 @@ section#lst-panel .item{
 }
 .item button{
     pointer-events: auto;
+    height: fit-content;
+    border: unset;
+    background-color: unset;
+}
+.item button .delete-img{  
+    display: grid; 
+    height: 40px;
+    justify-self: end;
+    z-index: -1;
 }
 
 footer{

@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index-style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/swiper.css" />
     <title>Pp_Alpha</title>
   </head>
   <body>
@@ -19,10 +14,7 @@
     </header>
     <section id="viewer">
       <img class="background" src="media/background.png" alt="" srcset="">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper" id="swiper-wrapper">
-          <div class="swiper-slide start"></div>
-        </div>
+      <div id="panel"> 
       </div>
     </section>
     <section id="opt-panel">
@@ -61,15 +53,7 @@
     <footer></footer>
   </body>
 
-  <!-- Swiper JS -->
-  <script src="js/ballons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!--Main js-->
+  <script src="js/main.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 1,
-    });
-  </script>
 </html>
