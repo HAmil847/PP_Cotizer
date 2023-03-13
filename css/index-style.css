@@ -96,6 +96,8 @@ section#opt-panel input, button, select{
     border: solid 1px gray;
     border-right: none  ;
     background-color: rgb(213, 255, 255);
+
+    display:  none  ;
 }
 
 section#lst-panel{

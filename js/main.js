@@ -10,7 +10,7 @@ const inputOption = document.getElementById("option");
 const btnAddItem = document.getElementById("crear-item");
 //main
 
-//listerners
+//listerners  
 
 btnAddItem.addEventListener("click", function () {
   createNewElement();
@@ -115,4 +115,13 @@ function createItemView(option, size, amount) {
   return view;
 }
 
+function deletItemFromView(){
+  //delete the item from the view before touch the btn 
+  
+}
+
+function deleteFromItemList(){
+  //delete from the item list
+
+}
 //debugs
